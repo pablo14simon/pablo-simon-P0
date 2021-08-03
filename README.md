@@ -5,8 +5,8 @@ Tipo: Notebook
 Año adquisición: 2017
 
 Procesador:
-	Marca/Modelo: Intel Core i5 2450M
-	Velocidad Base: 99.76 MHz
+	- Marca/Modelo: Intel Core i5 2450M
+	- Velocidad Base: 99.76 MHz
 	Velocidad Máxima: 2843 MHz
 	Numero de núcleos: 2
 	Número de hilos: 4
