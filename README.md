@@ -20,3 +20,6 @@ Cada memoria utilizada en las operaciones de matrices se va acumulando según el
 1.16.4
 
 Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. 
+
+![image](https://user-images.githubusercontent.com/88359228/128463141-4ebdb61f-b4a2-4c50-b32c-215d837ab60b.png)
+
