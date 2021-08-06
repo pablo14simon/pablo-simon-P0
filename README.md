@@ -2,8 +2,8 @@
 MCOC2021-P0
 
 ¿Cómo difiere del gráfico del profesor/ayudante?
-Son gráficos muy similares ya que ambos se encuentran entre parametros similares y possen curvas muy parecidas. Mi curva se puede observar que es mas constante sin muchas alteraciones o saltos, viendo que demoró en comenzar.
-No como en el caso del profesor donde hay un momento que desacelera y tiene saltos más bruscos, osea recorre más lento la matriz en los momentos medios, pero aun así su tiempo es menor en varias operaciones siendo asi su rendimiento igual o mejor que el mio. 
+Son gráficos muy similares ya que ambos se encuentran entre parametros similares y possen curvas muy parecidas. Mi curva se puede observar que tiende a ser más plano y posee muchas alteraciones o saltos, viendo que demoró en comenzar, asi significa que el computador trabaja de manera constante, pero tiene varios retrasos por memoria.
+No como en el caso del profesor donde hay un momento que desacelera más en los saltos bruscos, osea recorre más lento la matriz en los momentos medios, pero aun así su tiempo es menor en varias operaciones y los saltos menos altos, siendo asi su rendimiento igual o mejor que el mio. Además comienza con mayor rapidez.
 
 ¿A qué se pueden deber las diferencias en cada corrida?
 Al ser un proceso iterativo donde recorre distintas matrices usando la memoria de nuestro computador, si bien cada operación se efectúa de la misma manera, se podrá diferenciar cambios en el tiempo de cada operación sabiendo que los elementos que ocupa el computador varía en cada calculo, o sea,
