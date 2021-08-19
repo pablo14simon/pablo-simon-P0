@@ -73,3 +73,22 @@ Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre 
 ![image](https://user-images.githubusercontent.com/88359228/128463141-4ebdb61f-b4a2-4c50-b32c-215d837ab60b.png)
 
 *MCOC2021-P3*
+
+En esta entrega se realizó un codigo para para definir la función de laplace y así construir las matrices correspondientes con 2 en la diagonal y -1 en las diagonales secundarias. Luego se realizaron 12 codigos que permitieran medir cual era el rendimiento al hacer la matriz y al invertirla, así para cada caso ya explicado en el enunciado. Luego se realizó un codigo que permitía gráficar este rendimiento de inversión y memoria para cada caso. 
+
+Hubieron algunos casos en los que el codigo no funcionaba, cuando se trataba de medir el desempeño con np.longdouble o bien dicho usando el comando float128. Esto fue porque mi python específico no poseia en la libreria numpy esta opción. Es un error muy común en donde muestra en la consola FileNotFound[Errno 2]. También ocuriió especificamente para el caso 1 de numpy.linalg.inv usando el np.half osea flow16. Esto ocurrió porque python o bien el computador no aguantaba esto, ya que el comando linalg no lo soportaba.
+
+Además de todo esto se entregaron otras dos carpetas, una con los textos entregados por los codigos, los que fueron necesarios para graficar de forma ordenada. Y otra carpeta con la imagen de los gráficos obtenidos. 
+Por último se hizo la entrega correspondiente por canvas.
+
+
+¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta.
+
+El comando scipy con overwrite = True es el más rapido, luego el mismo pero con False y por ultimo el numpy. Esto ocurre porque el numpy recorre la matriz entera en cambio scipy ocupa una funcion de la matriz. Luego para los distintos flows es decir, half, single, double y longdouble. Estos son comandos que permiten que el computador funcione con una memoria específica, por ejemplo el half reducirá a la mitad los bytes utilizado. Esto puede afectar entonces en la rapidez.
+
+¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas. 
+
+Aca podemos ver como es que tanto la memoria como el cpu aumenta rotundxamente en el momento en que abro una aplicación. Este proceso fue mientras corría el codigo. Esto es porque tanto el cache como el paralelismo quitan espacio y rendimiento, debido a que se realizan varios procesos al mismo tiempo. Si bien la memoria caché es la más baja, si afecta.
+
+![image](https://user-images.githubusercontent.com/88359228/130005010-762367c1-97d2-4a5c-8cbb-0d6c4c1b9400.png)
+![image](https://user-images.githubusercontent.com/88359228/130005020-1011a951-7ff9-4017-bee5-6294da62a270.png)
