@@ -48,7 +48,8 @@ Dirección IP (Externa, del ISP): 190.161.68.119
 
 Proveedor internet: VTR Banda Ancha S.A.
 
-MCOC2021-P2
+*MCOC2021-P2*
+
 ¿Cómo difiere del gráfico del profesor/ayudante?
 Son gráficos muy similares ya que ambos se encuentran entre parametros similares y possen curvas muy parecidas. Mi curva se puede observar que tiende a ser más plano y posee pocas alteraciones o saltos, viendo que demoró en comenzar, asi significa que el computador trabaja de manera constante, pero puede ser lenta.
 No como en el caso del profesor donde hay un momento que desacelera más en los saltos bruscos, osea recorre más lento la matriz en los momentos medios, pero aun así su tiempo es menor en varias operaciones y los saltos parecen menos altos, siendo asi su rendimiento igual o mejor que el mio. Además comienza con mayor rapidez.
@@ -71,4 +72,4 @@ Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre 
 
 ![image](https://user-images.githubusercontent.com/88359228/128463141-4ebdb61f-b4a2-4c50-b32c-215d837ab60b.png)
 
-MCOC2021-P3
+*MCOC2021-P3*
