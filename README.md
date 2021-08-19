@@ -1,5 +1,6 @@
 # pablo-simon-P0
-MCOC2021-P1
+-MCOC2021-P1
+
 Marca/Modelo: Toshiba Satellite
 
 Tipo: Notebook
