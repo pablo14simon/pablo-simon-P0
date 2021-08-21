@@ -95,13 +95,22 @@ Aca podemos ver como es que tanto la memoria como el cpu aumenta rotundxamente e
 
 *MCOC2021-P4*
 
-Este proceso es aún más largo que los de las tareas anteriores, esto es debido a que se obtiene la inversa de A de una forma más completa con una operacion de vectores y valores propios. Por ende se realiza todo el proceso considerado en algebra lineal. Esto lo hace primero de la forma común usando el comando solve de scipy. Se fue diferenciando en los codigos de overwrite y assume. Además de diferenciar estos mismos según si es simple o double, funciones que afectan en la memoria del computador. 
-Luego respecto a Eigh 
+Este proceso es aún más largo que los de las tareas anteriores, esto es debido a que se obtiene la inversa de A de una forma más completa con una operacion con un bector "b" de 1s. Por ende se realiza todo el proceso considerado en algebra lineal. Esto lo hace primero de la forma común usando el comando solve de scipy. Se fue diferenciando en los codigos de overwrite y assume. Además de diferenciar estos mismos según si es simple o double, funciones que afectan en la memoria del computador. 
+Luego respecto a Eigh es un proceso similar pero se enfoca en los vectores y valores propios. A partir de esto se logra el proceso.
+
 
 La variabilidad de tiempo es muy similar para cada caso, algunos son mas eficientes por ser mas simples o por asumir aspectos en la matriz. En el caso de solve es un proceso eficiente pero que va perdiendo rapidez a medida de que las matrices crecen, esto es debido a que operar con matrices grandes es dificil. Mientras que para eigh es dificil encontrar diferencias ya que son procesos muy parecidos, aunque es afectado por usar float32, relantizando todo, no como en solve que no afecta.
 
 
-Se ocupan 2 nucleos y 4 procesadores para cada proceso.
+Los algoritmos de solve son muy eficacez comparados con los de eigh ya que trabaja con una matriz de puros unos y no con todos los valores y vectores propios posibles. Es un proceso simple, que si bien pareciera que la primera funcion de multiplicación es la mas rapida, no lo es. Scipy logra un algoritmo mas rapido con todos las otras funciones de solve. Especialmente en assume_a, así definiendo el caso A.3 el mejor. Los eigh son todos demasiado parecidos para poder compararlos.
 
-![image](https://user-images.githubusercontent.com/88359228/130308851-dfb89463-1d0c-40ff-b507-4a2fc9d895f4.png)
+El tamaño de la matriz si afecta en el proceso, para solve el Ax=b se vuelve muy ineficiente por lo que se opta por el comando solve. Luego en eigh demora más pero entre cada comando no hay diferencias al aumentar las matrices.
+
+La superioridad del caso A.3 como se dijo es porque se asumen los valores positivos, que son los mas comunes, por lo que se salta varios pasos.Respecto a eigh lo que mas afecta es el float32 y double, donde el float al ocupar menos memoria el tiempo es menor.
+
+
+Se ocupan 2 nucleos y 4 procesadores para cada proceso. En las imagenes se puede ver como funciona el computador en el momento de ejecución de los codigos aumenta rapidamente el CPU de uso. Tambien si nos fijamos en la memoria que es similar para todos los procesos se observa que rondea los 4.8 GB la diferencia se nota cuando va aumentando el tamaño de las matrices, viendo como en peridos el grafico sube. Aumenta más también al ocupar double.
+
+![image](https://user-images.githubusercontent.com/88359228/130309101-5c05e2fb-8e65-4916-97ad-089e0fc24704.png)
+
 ![image](https://user-images.githubusercontent.com/88359228/130308854-4deeb27e-b7f0-4f40-8052-a845db61dc39.png)
