@@ -92,3 +92,5 @@ Aca podemos ver como es que tanto la memoria como el cpu aumenta rotundxamente e
 
 ![image](https://user-images.githubusercontent.com/88359228/130005010-762367c1-97d2-4a5c-8cbb-0d6c4c1b9400.png)
 ![image](https://user-images.githubusercontent.com/88359228/130005020-1011a951-7ff9-4017-bee5-6294da62a270.png)
+
+*MCOC2021-P4*
