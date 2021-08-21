@@ -94,3 +94,14 @@ Aca podemos ver como es que tanto la memoria como el cpu aumenta rotundxamente e
 ![image](https://user-images.githubusercontent.com/88359228/130005020-1011a951-7ff9-4017-bee5-6294da62a270.png)
 
 *MCOC2021-P4*
+
+Este proceso es aún más largo que los de las tareas anteriores, esto es debido a que se obtiene la inversa de A de una forma más completa con una operacion de vectores y valores propios. Por ende se realiza todo el proceso considerado en algebra lineal. Esto lo hace primero de la forma común usando el comando solve de scipy. Se fue diferenciando en los codigos de overwrite y assume. Además de diferenciar estos mismos según si es simple o double, funciones que afectan en la memoria del computador. 
+Luego respecto a Eigh 
+
+La variabilidad de tiempo es muy similar para cada caso, algunos son mas eficientes por ser mas simples o por asumir aspectos en la matriz. En el caso de solve es un proceso eficiente pero que va perdiendo rapidez a medida de que las matrices crecen, esto es debido a que operar con matrices grandes es dificil. Mientras que para eigh es dificil encontrar diferencias ya que son procesos muy parecidos, aunque es afectado por usar float32, relantizando todo, no como en solve que no afecta.
+
+
+Se ocupan 2 nucleos y 4 procesadores para cada proceso.
+
+![image](https://user-images.githubusercontent.com/88359228/130308851-dfb89463-1d0c-40ff-b507-4a2fc9d895f4.png)
+![image](https://user-images.githubusercontent.com/88359228/130308854-4deeb27e-b7f0-4f40-8052-a845db61dc39.png)
