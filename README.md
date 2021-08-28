@@ -114,3 +114,24 @@ Se ocupan 2 nucleos y 4 procesadores para cada proceso. En las imagenes se puede
 ![image](https://user-images.githubusercontent.com/88359228/130309101-5c05e2fb-8e65-4916-97ad-089e0fc24704.png)
 
 ![image](https://user-images.githubusercontent.com/88359228/130308854-4deeb27e-b7f0-4f40-8052-a845db61dc39.png)
+
+
+*MCO2021-P05*
+
+Primero se definieron las matrices laplacianas tanto para el lleno como para la dispersa, esto se puede ver en el pricnipio de cada codigo. También se ocupó para ambos la forma double, ya que fue pedido y tiene buen rendimiento. Esto se expresó mediante float64.
+
+Analizando el metodo de calculo y ensamblaje de una matriz llena es un proceso algo lento ya que se preocupa de cada valor, este funciona mejor para N mas bajos. Esto se puede ver en los gráficos donde a medida que es menor el N^º más rapido se realiza el proceso. Un N^2 lo hace más rapido que el de N^4. Se trabajó con los n de siempre para poder comparar con procesos anteriores. 
+
+Luego para la forma dispersa es un proceso eficáz ya que no toma en cuanta los ceros de las matrices, por lo que todo se hace más rapido. Esto se puede demostrar con los resultados obtenidos donde para ensamblar una matriz esta solo se dmoraba aproximadamente 1 segundo para M(N)=22, y el calculo tardadaba unos cuantos milisegundos. En cambio para el lleno se realizó el proceso más lento. Por lo menos en el ensamblaje fue muy parecido, también se demoró aproximadamente 1 segundo, pero para el calculo de este se demoró 10 segundos, por ende para cualquier caso es mejor escoger un proceso de calculo de matrices mediante metodo disperso. También si aumentamos el M(N) este proceso será muy eficáz no como la de lleno que le afecta drasticamente que se aumente esta variable. Ahora se puede observar el rendimiento del computador y la memoria al realizar estos dos procesos.
+
+
+Matriz llena
+![image](https://user-images.githubusercontent.com/88359228/131205185-657771eb-db96-45ea-91fc-777785d435c7.png)
+
+![image](https://user-images.githubusercontent.com/88359228/131205190-e2246cbb-7e73-4bc5-bddd-9699198d32bc.png)
+
+
+Matriz dispersa
+![image](https://user-images.githubusercontent.com/88359228/131205207-19550e09-fc20-48ae-97a2-3b80c0e50f59.png)
+![image](https://user-images.githubusercontent.com/88359228/131205214-ec904993-2ce9-45f4-8094-30673de0ef92.png)
+
