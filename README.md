@@ -128,10 +128,13 @@ Luego para la forma dispersa es un proceso eficáz ya que no toma en cuanta los 
 Matriz llena
 ![image](https://user-images.githubusercontent.com/88359228/131205185-657771eb-db96-45ea-91fc-777785d435c7.png)
 
-![image](https://user-images.githubusercontent.com/88359228/131205190-e2246cbb-7e73-4bc5-bddd-9699198d32bc.png)
+En el momento de realizar el proceso hay un uso que pasa de 29% a 60%, siendo lento.
 
+![image](https://user-images.githubusercontent.com/88359228/131205190-e2246cbb-7e73-4bc5-bddd-9699198d32bc.png)
+Podemos ver que ocupa bastante memoria debido a que utiliza más numeros.
 
 Matriz dispersa
 ![image](https://user-images.githubusercontent.com/88359228/131205207-19550e09-fc20-48ae-97a2-3b80c0e50f59.png)
+
 ![image](https://user-images.githubusercontent.com/88359228/131205214-ec904993-2ce9-45f4-8094-30673de0ef92.png)
 
