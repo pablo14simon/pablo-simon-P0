@@ -146,4 +146,28 @@ La memoria disminuye un poco debido a que se ocupan menos numeros.
 
 *MCO2021-P06*
 
+Aquí se procedió a comparar entre calculo de matrices llenas con las dispersas. Esto se realizó para las operaciónes de solve e inv, que ya vimos anteriormente. Para cada uno se utilizó double como configuración de memoria, esta fue importada desde la libreria y aplicada en laplacianas. Cabe mencionar que el tamaño de las matrices se limitó ya que sinó existían problemas de memoria, era super susceptible si se agregaban valores, rapidamente soltaba un erro de memoria. Respecto al rendimiento para todo estuvo parecido asi que no hizo falta compararlo, ya que las variaciones eran minimas.
 
+*Solve
+
+En solve la diferencia que hubo entre llenas y dispersas fue la rapidez, era notorio como en divergente era sumamente más rapido, además que podía ocupar mas valores de M, es mas eficiente y constante tanto en ensamblaje como en calcularlo. En cambio la llena es todo lo contrario, además presenta unas diferencias donde se puede ver en el gráfico respectivo que hasta el tamaño 100 de matriz hay mucha eficacia, teniendo mucha diferencialidad para cada iteración, lo cual existe en la dispersa pero no es tan notorio. En ese punto de tamaño 100 aumenta notablemente siguiento la recta de N**2 . Además la llena tiene un comienzo mucho más lento en el enzamblaje, normalizandose rapidamente después.
+
+Respecto a los N podemos ver como es la complejidad asintótica de cada uno, en el lleno podemos ver que a medida que aumente el N (M) en mi caso más le cuesta al computador realizar la operación por ende en el gráfico se comportará repentinamente más exponencial pasando de N**0 a N**2 rapidamente. En la solución se ve más claro que en el ensambleaje ya que este ultimo es un pco más constante. Ahora bien para el caso de dispersa ocurre lo mismo pero después de un mayor tamaño y aumenta de forma menos exponencial, por eso en el grafico podemos ver como en la solución este fluctúa entre N**2 y N**3. Eso sí para el ensamblaje es muchisimo mas constante y dura hasta aproximadamente a un tamaño 10000, osea 20 veces mas que en la solución. Esto se debe a que para el ensamblaje tiene que poner mayormente ceros por lo que no afecta mucho.
+
+El tamaño de las matrices afecta bastante a la llena, esto se comprobó al ver que en realizar 22 de estas atamaños no mas de 4000 se demoraba 1:24, pero si se le agregaba una mas pasaba los 2 minutos. Esto quiere decir que la llena es muy susceptible a tamaños mayores de 100 y que tener mas de 30 matrices generará gran diferencia. En cambio para las dispersas puede llegar a tamaños de 1000 sin problemas, además se pasó de 22 valores a 28 y el tiempo total solo varió 2 segundos.
+
+Entonces en comparación de llena con dispersa tiene una similitud en forma y comportamiento, solo que la dispersa tiene una escala mayor y se ensambla mejor. Por eso podemos ver mayor diferencia en ensambleje y solución en la dispersa y un parecido en la llena. La dispersa además es muchisimo mas constante, no tiene cambios exponenciales bruscos.
+
+
+*Inv
+
+Ahora en estas operaciones con el comando inv para invertir, se observaron comportamientos super similares a los vistos en solve, donde la dispersa era mucho mejor en todo ambito que la llena, sieno muy estable y constante la dispersa y la llena suave y exponencial.
+
+Si analizamos los N(M mi caso) se puede observar que en la dispersión para el ensamblaje siempre fue constante rondando el milisegundo todo el tiempo. no se logró llegar a un N tan alto para observar un cambio. Ahora bien para el calculo de la solución se puede ver que aumenta pero de manera muy constante todo el tiempo, casi como una función lineal, aún asi llega a limites de un segundo siendo muy rapida pero que despues de N=2000 superaría esto, por lo que aguanta bien pero va perdiendo de a poco su velocidad al agregar. Luego la llena tiene tiempo casi sero hasta llegar entre 20 y 100 donde aumenta quedando en 1 milisegundo ambas (ensamble y solución). Luego aumenta exponencialmente siguiendo N**2. Podemos ver que son muy parecida las curvas de ensamblaje y solucion, solo que el de ensamblaje es un poco mejor.Por ende llena será mas ineficiente que dispersa a un N muy alto.
+
+El tamaño de las matrices afecta ya que a menores N la llena es más eficiente, aproximadamente a los 500 el de dispersión ya es más efectivo, así al final escogiendo un N maximo de 2500 con 21 valores, podemos ver que en total el lleno se demora 50 segundos y dispersa 35 segundos. Luego de esto se tuvo problemas de memoria.
+
+Hay bastante diferencia, para la llena es muy parecida el ensamblaje y la solución, siendo prudente ya que trabaja con todos los numeros en ambos casos. Luego comparando dispersa t llena es bastante distinto, la primera sigue a N**1 mientras que la segunda a N**2 siendo así mas efectivo el disperso a largo plazo. Esta ademas es más constante y no presenta saltos imprevistos. Al comparar el ensamblaje con la solución podemos ver que ambos son bastante constantes solo que el ensamblaje es más rapido y sigue a N**0 en cambio la solución siempre es más lenta y sigiue a N**1.
+
+
+En conclusión si queremos calcular pocas matrices, no mas de 100, se recomienda ir por la llena, pero a largo plazo siempre es mejor calcular con matrices dispersas especialmente en solve. 
