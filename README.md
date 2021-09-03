@@ -116,6 +116,9 @@ Se ocupan 2 nucleos y 4 procesadores para cada proceso. En las imagenes se puede
 ![image](https://user-images.githubusercontent.com/88359228/130308854-4deeb27e-b7f0-4f40-8052-a845db61dc39.png)
 
 
+# Matrices dispersas y complejidad computacional
+
+
 *MCO2021-P05*
 
 Primero se definieron las matrices laplacianas tanto para el lleno como para la dispersa, esto se puede ver en el pricnipio de cada codigo. También se ocupó para ambos la forma double, ya que fue pedido y tiene buen rendimiento. Esto se expresó mediante float64.
@@ -139,4 +142,8 @@ Aca en cambio llega a un uso de 60% mucho más util, no necesita tanto esfuerzo 
 
 ![image](https://user-images.githubusercontent.com/88359228/131205214-ec904993-2ce9-45f4-8094-30673de0ef92.png)
 La memoria disminuye un poco debido a que se ocupan menos numeros.
+
+
+*MCO2021-P06*
+
 
